@@ -56,7 +56,7 @@ class Exam(models.Model):
     archivized_in = models.DateTimeField(blank=True, null=True)
 
     def __str__(self):
-        return f"Exam '{self.title}' - by {self.examiner.__str__()} "
+        return f"Exam '{self.title}' - by {self.examiner.id} "
 
     def start_exam(self):
         """Simple method that set avaiable attribute of instance to True
@@ -91,7 +91,7 @@ class Question(models.Model):
     max_points = models.FloatField(validators=[validate_positive])
 
     def __str__(self):
-        return f'Question {self.id} of exam {self.exam.__str__()}'
+        return f'Question {self.id} of exam {self.exam.title}'
 
 
 class Result(models.Model):
@@ -142,7 +142,7 @@ class Result(models.Model):
     )
 
     def __str__(self):
-        return f'Result user {self.student.__str__()} of exam {self.exam.__str__()}'
+        return f'Result user {self.student.id} of exam {self.exam.title}'
 
     def count_results(self):
         """Simple funtion.
@@ -194,7 +194,7 @@ class Answer(models.Model):
     answer_text = models.TextField(max_length=1500, blank=True)
 
     def __str__(self):
-        return f'Answer-{self.id} of question-{self.question.__str__()} exam {self.exam.__str__()}'
+        return f'Answer-{self.id} of question-{self.question.id} exam {self.exam.title}'
 
 
 class Assesment(models.Model):
@@ -232,4 +232,4 @@ class Assesment(models.Model):
     points = models.FloatField(validators=[validate_positive],)
 
     def __str__(self):
-        return f'Assesment- of anwser-{self.student_answer.__str__()} exam {self.exam.__str__()}'
+        return f'Assesment- of anwser-{self.student_answer.id} exam {self.exam.title}'
