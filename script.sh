@@ -1,3 +1,4 @@
+virtualenv venv
 source venv/Scripts/activate
 cd sheets_manager
 pip install -r requirements.txt
