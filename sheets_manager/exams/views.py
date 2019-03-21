@@ -114,9 +114,10 @@ class ExamDetail(generics.RetrieveUpdateDestroyAPIView):
             obj.archivized = True
             obj.archivized_in = timezone.now()
             obj.save()
+            return response.Response(status=status.HTTP_202_ACCEPTED)
         else:
             obj.delete()
-        return response.Response(status=status.HTTP_200_OK)
+            return response.Response(status=status.HTTP_204_NO_CONTENT)
 
 
 class ExamResult(generics.RetrieveAPIView):
