@@ -44,19 +44,19 @@
         <b>/exams/results/</b> - list of all results of users exams in app
     </li>
     <li>
-        <b>/exams/<pk>/</b> - detail of exam (only author of exam can access)
+        <b>/exams/&lt;pk&gt;/</b> - detail of exam (only author of exam can access)
     </li>
     <li>
-        <b>/exams/<pk>/test/</b> - test of exam for students (student can access only when exam.avaiable == True)
+        <b>/exams/&lt;pk&gt;/test/</b> - test of exam for students (student can access only when exam.avaiable == True)
     </li>
     <li>
-        <b>/exams/<pk>/assesment</b> - assesment of students exams answers (only author of exam can access)
+        <b>/exams/&lt;pk&gt;/assesment</b> - assesment of students exams answers (only author of exam can access)
     </li>
     <li>
-        <b>/exams/<pk>/results</b> - list of results students assesments (only author of exam can access)
+        <b>/exams/&lt;pk&gt;/results</b> - list of results students assesments (only author of exam can access)
     </li>
     <li>
-        <b>/exams/<pk>/result</b> - student result with details (student can access only when exam.judged == True)
+        <b>/exams/&lt;pk&gt;/result</b> - student result with details (student can access only when exam.judged == True)
     </li>
 </ul>
 
