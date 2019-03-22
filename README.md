@@ -95,11 +95,9 @@
     <li>
         <code>python manage.py makemigrations</code>
     </li>
-
     <li>
-        <code>python manage.py loaddata db.json</code>
+        <code>python manage.py migrate</code>
     </li>
-
     <li>
         <code>python manage.py loaddata db.json</code>
     </li>
