@@ -1,10 +1,10 @@
-<h3>DRF - Exam sheet example</h3>
+<h1>DRF - Exam sheet example</h1>
 <p>An example Django REST framework application.</p>
 
 <strong><small>Required python 3.7.0+</small></strong>
 
 <hr>
-<h5>API Endpoints</h5>
+<h3>API Endpoints</h3>
 
 <b>Users:</b>
 <ul>
@@ -61,7 +61,7 @@
 </ul>
 
 <hr>
-<h5>Install: </h5>
+<h3>Install: </h3>
 <ol>
     <li>
         <code>git clone https://github.com/psiepka/Chapter-1.git</code>
@@ -117,11 +117,11 @@ If you want to check tests
 
 
 <hr>
-<h5>DOCKER</h5>
+<h3>DOCKER</h3>
 <a href="https://hub.docker.com/r/patrykeo/exams">Image</a>
 <hr>
 
-<h5>Test Case Scenarios</h5>
+<h3>Test Case Scenarios</h3>
 <ul>
     <li>Test permisions app</li>
     <li>Test create, update, delete exam</li>
@@ -133,7 +133,7 @@ If you want to check tests
 </ul>
 
 
-<h5>Intro:</h5>
+<h3>Intro:</h3>
 <br>
 After you log in go to <a href="http://127.0.0.1:8000/exams/">exams</a> (http://127.0.0.1:8000/exams/)
 on this authorized users can create exams sheets - anonymous user can only read elements of exam list.
