@@ -9,8 +9,8 @@
 <b>Users:</b>
 <ul>
     <li>
-        <b>/auth/login/</b> - login to app
-        <small>Users avaialbe after load fixtures:
+        <b>/auth/login/</b> - login to app <br>
+        <small>Users avaiable after load fixtures:
             <ul>
                 <li>
                     username:'User_1'<br>
