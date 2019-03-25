@@ -50,7 +50,7 @@
         <b>GET PUT /exams/&lt;pk&gt;/test/</b> - test of exam for students (student can access only when exam.avaiable == True)
     </li>
     <li>
-        <bGET PUT> /exams/&lt;pk&gt;/assesment</b> - assesment of students exams answers (only author of exam can access)
+        <b>GET PUT /exams/&lt;pk&gt;/assesment</b> - assesment of students exams answers (only author of exam can access)
     </li>
     <li>
         <b>GET PUT /exams/&lt;pk&gt;/results</b> - list of results students assesments (only author of exam can access)
