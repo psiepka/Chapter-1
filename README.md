@@ -42,6 +42,14 @@
     </li>
     <li>
         <b>GET /exams/results/</b> - list of all results of users exams in app
+        <ul>
+            <li>
+                post
+            </li>
+            <pre>
+                belblell
+            </pre>
+        </ul>
     </li>
     <li>
         <b>GET PUT /exams/&lt;pk&gt;/</b> - detail of exam (only author of exam can access)
