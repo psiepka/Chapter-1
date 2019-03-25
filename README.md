@@ -35,28 +35,28 @@
 <b>Exams:</b>
 <ul>
     <li>
-        <b>/exams/</b> - list of all not archives exams in app
+        <b>GET POST /exams/</b> - list of all not archives exams in app
     </li>
     <li>
-        <b>/exams/archives/</b> - list of all archives exams in app
+        <b>GET /exams/archives/</b> - list of all archives exams in app
     </li>
     <li>
-        <b>/exams/results/</b> - list of all results of users exams in app
+        <b>GET /exams/results/</b> - list of all results of users exams in app
     </li>
     <li>
-        <b>/exams/&lt;pk&gt;/</b> - detail of exam (only author of exam can access)
+        <b>GET PUT /exams/&lt;pk&gt;/</b> - detail of exam (only author of exam can access)
     </li>
     <li>
-        <b>/exams/&lt;pk&gt;/test/</b> - test of exam for students (student can access only when exam.avaiable == True)
+        <b>GET PUT /exams/&lt;pk&gt;/test/</b> - test of exam for students (student can access only when exam.avaiable == True)
     </li>
     <li>
-        <b>/exams/&lt;pk&gt;/assesment</b> - assesment of students exams answers (only author of exam can access)
+        <bGET PUT> /exams/&lt;pk&gt;/assesment</b> - assesment of students exams answers (only author of exam can access)
     </li>
     <li>
-        <b>/exams/&lt;pk&gt;/results</b> - list of results students assesments (only author of exam can access)
+        <b>GET PUT /exams/&lt;pk&gt;/results</b> - list of results students assesments (only author of exam can access)
     </li>
     <li>
-        <b>/exams/&lt;pk&gt;/result</b> - student result with details (student can access only when exam.judged == True)
+        <b>GET /exams/&lt;pk&gt;/result</b> - student result with details (student can access only when exam.judged == True)
     </li>
 </ul>
 
