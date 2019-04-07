@@ -197,8 +197,9 @@ class ExamTestCase(APITestCase):
         Simple verify corrrect updates of Exam details by author
         """
         data = {
-            "title": "Last exam number 3",
-            "topic": "Building",
+            "id": 1,
+            "title": "First exam test",
+            "topic": "TESTS",
             "exam_questions": [
                 {
                     "question_text": "Which is more effective accordding to bearing -steel or concrete brigde? Why?",
@@ -215,7 +216,7 @@ class ExamTestCase(APITestCase):
         self.assertEqual(exam.exam_questions.first().question_text, data['exam_questions'][0]['question_text'])
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
-    def test_detail_exam_archives_by_examiner(self):
+    def test_detail_exam_update_by_student(self):
         """
         Verify corrrect adding Question to Exam by author
         """
